@@ -16,5 +16,10 @@ namespace sistema_Patas_Cuidados
         {
             InitializeComponent();
         }
+
+        private void lblID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

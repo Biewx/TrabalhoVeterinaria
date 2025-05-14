@@ -53,7 +53,9 @@
             pictureBox3 = new PictureBox();
             dgvConsultas = new DataGridView();
             btlistar = new Button();
-            btListarTodos = new Button();
+            btCadastrar = new Button();
+            lblID = new Label();
+            txtID = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvConsultas).BeginInit();
@@ -146,7 +148,7 @@
             // 
             textBox3.Location = new Point(274, 386);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(741, 30);
+            textBox3.Size = new Size(420, 30);
             textBox3.TabIndex = 11;
             // 
             // lblData
@@ -276,16 +278,34 @@
             btlistar.Text = "Listar";
             btlistar.UseVisualStyleBackColor = false;
             // 
-            // btListarTodos
+            // btCadastrar
             // 
-            btListarTodos.BackColor = Color.Indigo;
-            btListarTodos.ForeColor = SystemColors.ButtonHighlight;
-            btListarTodos.Location = new Point(70, 299);
-            btListarTodos.Name = "btListarTodos";
-            btListarTodos.Size = new Size(127, 34);
-            btListarTodos.TabIndex = 25;
-            btListarTodos.Text = "Listar Todos";
-            btListarTodos.UseVisualStyleBackColor = false;
+            btCadastrar.BackColor = Color.Indigo;
+            btCadastrar.ForeColor = SystemColors.ButtonHighlight;
+            btCadastrar.Location = new Point(70, 299);
+            btCadastrar.Name = "btCadastrar";
+            btCadastrar.Size = new Size(127, 34);
+            btCadastrar.TabIndex = 25;
+            btCadastrar.Text = "Cadastrar";
+            btCadastrar.UseVisualStyleBackColor = false;
+            // 
+            // lblID
+            // 
+            lblID.AutoSize = true;
+            lblID.Location = new Point(729, 361);
+            lblID.Name = "lblID";
+            lblID.Size = new Size(117, 22);
+            lblID.TabIndex = 26;
+            lblID.Text = "N° Consulta:";
+            lblID.TextAlign = ContentAlignment.TopCenter;
+            lblID.Click += lblID_Click;
+            // 
+            // txtID
+            // 
+            txtID.Location = new Point(729, 386);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(286, 30);
+            txtID.TabIndex = 27;
             // 
             // telaPrinciapal
             // 
@@ -293,7 +313,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
             ClientSize = new Size(1154, 670);
-            Controls.Add(btListarTodos);
+            Controls.Add(txtID);
+            Controls.Add(lblID);
+            Controls.Add(btCadastrar);
             Controls.Add(btlistar);
             Controls.Add(dgvConsultas);
             Controls.Add(pictureBox3);
@@ -354,6 +376,8 @@
         private PictureBox pictureBox3;
         private DataGridView dgvConsultas;
         private Button btlistar;
-        private Button btListarTodos;
+        private Button btCadastrar;
+        private Label lblID;
+        private TextBox txtID;
     }
 }
