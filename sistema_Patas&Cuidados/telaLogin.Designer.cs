@@ -105,6 +105,7 @@
             btEntrar.TabIndex = 7;
             btEntrar.Text = "Entrar";
             btEntrar.UseVisualStyleBackColor = false;
+            btEntrar.Click += btEntrar_Click;
             // 
             // telaInicial
             // 

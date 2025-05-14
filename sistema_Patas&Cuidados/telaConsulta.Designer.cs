@@ -35,17 +35,17 @@
             lblEspecie = new Label();
             txtEspecie = new TextBox();
             lblTutor = new Label();
-            textBox1 = new TextBox();
+            txtTutor = new TextBox();
             lblMotivo = new Label();
-            textBox2 = new TextBox();
+            txtMotivo = new TextBox();
             lblVeterinario = new Label();
-            textBox3 = new TextBox();
+            txtVeterinario = new TextBox();
             lblData = new Label();
-            maskedTextBox1 = new MaskedTextBox();
+            txtData = new MaskedTextBox();
             lblContato = new Label();
             txtContato = new TextBox();
             lblHora = new Label();
-            maskedTextBox2 = new MaskedTextBox();
+            txtHorario = new MaskedTextBox();
             btConsultar = new Button();
             btAgendar = new Button();
             btEditar = new Button();
@@ -53,9 +53,8 @@
             pictureBox3 = new PictureBox();
             dgvConsultas = new DataGridView();
             btlistar = new Button();
-            btCadastrar = new Button();
             lblID = new Label();
-            txtID = new TextBox();
+            txtNumeroConsulta = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvConsultas).BeginInit();
@@ -112,12 +111,12 @@
             lblTutor.TabIndex = 6;
             lblTutor.Text = "Tutor:";
             // 
-            // textBox1
+            // txtTutor
             // 
-            textBox1.Location = new Point(274, 299);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(420, 30);
-            textBox1.TabIndex = 7;
+            txtTutor.Location = new Point(274, 299);
+            txtTutor.Name = "txtTutor";
+            txtTutor.Size = new Size(420, 30);
+            txtTutor.TabIndex = 7;
             // 
             // lblMotivo
             // 
@@ -128,12 +127,12 @@
             lblMotivo.TabIndex = 8;
             lblMotivo.Text = "Motivo consulta:";
             // 
-            // textBox2
+            // txtMotivo
             // 
-            textBox2.Location = new Point(729, 468);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(286, 30);
-            textBox2.TabIndex = 9;
+            txtMotivo.Location = new Point(729, 468);
+            txtMotivo.Name = "txtMotivo";
+            txtMotivo.Size = new Size(286, 30);
+            txtMotivo.TabIndex = 9;
             // 
             // lblVeterinario
             // 
@@ -144,12 +143,12 @@
             lblVeterinario.TabIndex = 10;
             lblVeterinario.Text = "Veterinário:";
             // 
-            // textBox3
+            // txtVeterinario
             // 
-            textBox3.Location = new Point(274, 386);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(420, 30);
-            textBox3.TabIndex = 11;
+            txtVeterinario.Location = new Point(274, 386);
+            txtVeterinario.Name = "txtVeterinario";
+            txtVeterinario.Size = new Size(420, 30);
+            txtVeterinario.TabIndex = 11;
             // 
             // lblData
             // 
@@ -160,14 +159,14 @@
             lblData.TabIndex = 12;
             lblData.Text = "Data:";
             // 
-            // maskedTextBox1
+            // txtData
             // 
-            maskedTextBox1.Location = new Point(274, 468);
-            maskedTextBox1.Mask = "00/00/0000";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(111, 30);
-            maskedTextBox1.TabIndex = 13;
-            maskedTextBox1.ValidatingType = typeof(DateTime);
+            txtData.Location = new Point(274, 468);
+            txtData.Mask = "00/00/0000";
+            txtData.Name = "txtData";
+            txtData.Size = new Size(111, 30);
+            txtData.TabIndex = 13;
+            txtData.ValidatingType = typeof(DateTime);
             // 
             // lblContato
             // 
@@ -194,14 +193,14 @@
             lblHora.TabIndex = 16;
             lblHora.Text = "Horário:";
             // 
-            // maskedTextBox2
+            // txtHorario
             // 
-            maskedTextBox2.Location = new Point(509, 468);
-            maskedTextBox2.Mask = "00:00";
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(111, 30);
-            maskedTextBox2.TabIndex = 17;
-            maskedTextBox2.ValidatingType = typeof(DateTime);
+            txtHorario.Location = new Point(509, 468);
+            txtHorario.Mask = "00:00";
+            txtHorario.Name = "txtHorario";
+            txtHorario.Size = new Size(111, 30);
+            txtHorario.TabIndex = 17;
+            txtHorario.ValidatingType = typeof(DateTime);
             // 
             // btConsultar
             // 
@@ -224,6 +223,7 @@
             btAgendar.TabIndex = 19;
             btAgendar.Text = "Agendar";
             btAgendar.UseVisualStyleBackColor = false;
+            btAgendar.Click += btAgendar_Click;
             // 
             // btEditar
             // 
@@ -266,28 +266,18 @@
             dgvConsultas.RowHeadersWidth = 62;
             dgvConsultas.Size = new Size(668, 161);
             dgvConsultas.TabIndex = 23;
+            dgvConsultas.CellDoubleClick += dgvConsultas_CellDoubleClick;
             // 
             // btlistar
             // 
             btlistar.BackColor = Color.Indigo;
             btlistar.ForeColor = SystemColors.ButtonHighlight;
-            btlistar.Location = new Point(70, 245);
+            btlistar.Location = new Point(70, 274);
             btlistar.Name = "btlistar";
             btlistar.Size = new Size(112, 34);
             btlistar.TabIndex = 24;
             btlistar.Text = "Listar";
             btlistar.UseVisualStyleBackColor = false;
-            // 
-            // btCadastrar
-            // 
-            btCadastrar.BackColor = Color.Indigo;
-            btCadastrar.ForeColor = SystemColors.ButtonHighlight;
-            btCadastrar.Location = new Point(70, 299);
-            btCadastrar.Name = "btCadastrar";
-            btCadastrar.Size = new Size(127, 34);
-            btCadastrar.TabIndex = 25;
-            btCadastrar.Text = "Cadastrar";
-            btCadastrar.UseVisualStyleBackColor = false;
             // 
             // lblID
             // 
@@ -300,12 +290,12 @@
             lblID.TextAlign = ContentAlignment.TopCenter;
             lblID.Click += lblID_Click;
             // 
-            // txtID
+            // txtNumeroConsulta
             // 
-            txtID.Location = new Point(729, 386);
-            txtID.Name = "txtID";
-            txtID.Size = new Size(286, 30);
-            txtID.TabIndex = 27;
+            txtNumeroConsulta.Location = new Point(729, 386);
+            txtNumeroConsulta.Name = "txtNumeroConsulta";
+            txtNumeroConsulta.Size = new Size(286, 30);
+            txtNumeroConsulta.TabIndex = 27;
             // 
             // telaPrinciapal
             // 
@@ -313,9 +303,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
             ClientSize = new Size(1154, 670);
-            Controls.Add(txtID);
+            Controls.Add(txtNumeroConsulta);
             Controls.Add(lblID);
-            Controls.Add(btCadastrar);
             Controls.Add(btlistar);
             Controls.Add(dgvConsultas);
             Controls.Add(pictureBox3);
@@ -323,17 +312,17 @@
             Controls.Add(btEditar);
             Controls.Add(btAgendar);
             Controls.Add(btConsultar);
-            Controls.Add(maskedTextBox2);
+            Controls.Add(txtHorario);
             Controls.Add(lblHora);
             Controls.Add(txtContato);
             Controls.Add(lblContato);
-            Controls.Add(maskedTextBox1);
+            Controls.Add(txtData);
             Controls.Add(lblData);
-            Controls.Add(textBox3);
+            Controls.Add(txtVeterinario);
             Controls.Add(lblVeterinario);
-            Controls.Add(textBox2);
+            Controls.Add(txtMotivo);
             Controls.Add(lblMotivo);
-            Controls.Add(textBox1);
+            Controls.Add(txtTutor);
             Controls.Add(lblTutor);
             Controls.Add(txtEspecie);
             Controls.Add(lblEspecie);
@@ -358,17 +347,17 @@
         private Label lblEspecie;
         private TextBox txtEspecie;
         private Label lblTutor;
-        private TextBox textBox1;
+        private TextBox txtTutor;
         private Label lblMotivo;
-        private TextBox textBox2;
+        private TextBox txtMotivo;
         private Label lblVeterinario;
-        private TextBox textBox3;
+        private TextBox txtVeterinario;
         private Label lblData;
-        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox txtData;
         private Label lblContato;
         private TextBox txtContato;
         private Label lblHora;
-        private MaskedTextBox maskedTextBox2;
+        private MaskedTextBox txtHorario;
         private Button btConsultar;
         private Button btAgendar;
         private Button btEditar;
@@ -376,8 +365,7 @@
         private PictureBox pictureBox3;
         private DataGridView dgvConsultas;
         private Button btlistar;
-        private Button btCadastrar;
         private Label lblID;
-        private TextBox txtID;
+        private TextBox txtNumeroConsulta;
     }
 }

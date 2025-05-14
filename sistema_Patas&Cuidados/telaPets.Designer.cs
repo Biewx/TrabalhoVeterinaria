@@ -33,19 +33,19 @@
             pictureBox3 = new PictureBox();
             btSalvar = new Button();
             btLimpar = new Button();
-            textBox1 = new TextBox();
             lblTutor = new Label();
-            txtEspecie = new TextBox();
             lblEspecie = new Label();
-            txtPet = new TextBox();
             lblPet = new Label();
             pictureBox2 = new PictureBox();
             lblSintomas = new Label();
             txtSintomas = new TextBox();
             lblConsultaN = new Label();
-            txtConsultaN = new TextBox();
             lblDiagnostico = new Label();
             btTelaConsulta = new Button();
+            lblNomePet = new Label();
+            lblTutor2 = new Label();
+            lblEspecie2 = new Label();
+            lblNumConsulta = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvPets).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -95,13 +95,6 @@
             btLimpar.Text = "Limpar";
             btLimpar.UseVisualStyleBackColor = false;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(283, 290);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(433, 31);
-            textBox1.TabIndex = 34;
-            // 
             // lblTutor
             // 
             lblTutor.AutoSize = true;
@@ -112,13 +105,6 @@
             lblTutor.TabIndex = 33;
             lblTutor.Text = "Tutor:";
             // 
-            // txtEspecie
-            // 
-            txtEspecie.Location = new Point(738, 208);
-            txtEspecie.Name = "txtEspecie";
-            txtEspecie.Size = new Size(286, 31);
-            txtEspecie.TabIndex = 32;
-            // 
             // lblEspecie
             // 
             lblEspecie.AutoSize = true;
@@ -128,13 +114,6 @@
             lblEspecie.Size = new Size(84, 22);
             lblEspecie.TabIndex = 31;
             lblEspecie.Text = "Espécie:";
-            // 
-            // txtPet
-            // 
-            txtPet.Location = new Point(283, 208);
-            txtPet.Name = "txtPet";
-            txtPet.Size = new Size(433, 31);
-            txtPet.TabIndex = 30;
             // 
             // lblPet
             // 
@@ -183,13 +162,6 @@
             lblConsultaN.TabIndex = 61;
             lblConsultaN.Text = "N° Consulta:";
             // 
-            // txtConsultaN
-            // 
-            txtConsultaN.Location = new Point(738, 290);
-            txtConsultaN.Name = "txtConsultaN";
-            txtConsultaN.Size = new Size(286, 31);
-            txtConsultaN.TabIndex = 62;
-            // 
             // lblDiagnostico
             // 
             lblDiagnostico.AutoSize = true;
@@ -212,14 +184,54 @@
             btTelaConsulta.Text = "Consultas";
             btTelaConsulta.UseVisualStyleBackColor = false;
             // 
+            // lblNomePet
+            // 
+            lblNomePet.AutoSize = true;
+            lblNomePet.Location = new Point(392, 183);
+            lblNomePet.Name = "lblNomePet";
+            lblNomePet.Size = new Size(59, 25);
+            lblNomePet.TabIndex = 64;
+            lblNomePet.Text = "label1";
+            // 
+            // lblTutor2
+            // 
+            lblTutor2.AutoSize = true;
+            lblTutor2.Location = new Point(828, 183);
+            lblTutor2.Name = "lblTutor2";
+            lblTutor2.Size = new Size(59, 25);
+            lblTutor2.TabIndex = 65;
+            lblTutor2.Text = "label2";
+            // 
+            // lblEspecie2
+            // 
+            lblEspecie2.AutoSize = true;
+            lblEspecie2.Location = new Point(344, 262);
+            lblEspecie2.Name = "lblEspecie2";
+            lblEspecie2.Size = new Size(59, 25);
+            lblEspecie2.TabIndex = 66;
+            lblEspecie2.Text = "label3";
+            lblEspecie2.Click += label3_Click;
+            // 
+            // lblNumConsulta
+            // 
+            lblNumConsulta.AutoSize = true;
+            lblNumConsulta.Location = new Point(861, 265);
+            lblNumConsulta.Name = "lblNumConsulta";
+            lblNumConsulta.Size = new Size(59, 25);
+            lblNumConsulta.TabIndex = 67;
+            lblNumConsulta.Text = "label4";
+            // 
             // telaPets
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
             ClientSize = new Size(1154, 670);
+            Controls.Add(lblNumConsulta);
+            Controls.Add(lblEspecie2);
+            Controls.Add(lblTutor2);
+            Controls.Add(lblNomePet);
             Controls.Add(lblDiagnostico);
-            Controls.Add(txtConsultaN);
             Controls.Add(lblConsultaN);
             Controls.Add(txtSintomas);
             Controls.Add(lblSintomas);
@@ -228,11 +240,8 @@
             Controls.Add(pictureBox3);
             Controls.Add(btSalvar);
             Controls.Add(btLimpar);
-            Controls.Add(textBox1);
             Controls.Add(lblTutor);
-            Controls.Add(txtEspecie);
             Controls.Add(lblEspecie);
-            Controls.Add(txtPet);
             Controls.Add(lblPet);
             Controls.Add(pictureBox2);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -254,18 +263,18 @@
         private Button btEditar;
         private Button btSalvar;
         private Button btLimpar;
-        private TextBox textBox1;
         private Label lblTutor;
-        private TextBox txtEspecie;
         private Label lblEspecie;
-        private TextBox txtPet;
         private Label lblPet;
         private PictureBox pictureBox2;
         private Label lblSintomas;
         private TextBox txtSintomas;
         private Label lblConsultaN;
-        private TextBox txtConsultaN;
         private Label lblDiagnostico;
         private Button btTelaConsulta;
+        private Label lblNomePet;
+        private Label lblTutor2;
+        private Label lblEspecie2;
+        private Label lblNumConsulta;
     }
 }
