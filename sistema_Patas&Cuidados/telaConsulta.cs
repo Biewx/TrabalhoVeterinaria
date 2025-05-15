@@ -12,12 +12,35 @@ using System.Xml.Linq;
 
 namespace sistema_Patas_Cuidados
 {
-    public partial class telaPrinciapal : Form
+    public partial class telaConsultas : Form
     {
-        public telaPrinciapal()
+        public telaConsultas()
         {
             InitializeComponent();
         }
+        private void CarregarConsultas()
+        {
+            try
+            {
+                string conexao = "server=localhost;user=root;database=clinica_veterinaria;password=;";
+                MySqlConnection conn = new MySqlConnection(conexao);
+                conn.Open();
+
+                string query = "SELECT * FROM consultas";
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                dgvConsultas.DataSource = dt;
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar dados: " + ex.Message);
+            }
+        }
+
 
         private void lblID_Click(object sender, EventArgs e)
         {
@@ -58,6 +81,8 @@ namespace sistema_Patas_Cuidados
             {
                 conexao.Close();
             }
+            CarregarConsultas();
+
         }
 
         private void dgvConsultas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -75,6 +100,11 @@ namespace sistema_Patas_Cuidados
                 prontuario.Show();
                 this.Hide();
             }
+        }
+
+        private void telaPrinciapal_Load(object sender, EventArgs e)
+        {
+            CarregarConsultas();
         }
     }
 }

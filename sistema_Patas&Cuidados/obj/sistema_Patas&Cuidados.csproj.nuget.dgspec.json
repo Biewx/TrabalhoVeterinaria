@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno_Manha\\Desktop\\PatasECuidados\\sistema_Patas&Cuidados\\sistema_Patas&Cuidados.csproj": {}
+    "C:\\Users\\Aluno_Manha\\Desktop\\Trabalho Vet\\sistema_Patas&Cuidados\\sistema_Patas&Cuidados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno_Manha\\Desktop\\PatasECuidados\\sistema_Patas&Cuidados\\sistema_Patas&Cuidados.csproj": {
+    "C:\\Users\\Aluno_Manha\\Desktop\\Trabalho Vet\\sistema_Patas&Cuidados\\sistema_Patas&Cuidados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno_Manha\\Desktop\\PatasECuidados\\sistema_Patas&Cuidados\\sistema_Patas&Cuidados.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno_Manha\\Desktop\\Trabalho Vet\\sistema_Patas&Cuidados\\sistema_Patas&Cuidados.csproj",
         "projectName": "sistema_Patas&Cuidados",
-        "projectPath": "C:\\Users\\Aluno_Manha\\Desktop\\PatasECuidados\\sistema_Patas&Cuidados\\sistema_Patas&Cuidados.csproj",
+        "projectPath": "C:\\Users\\Aluno_Manha\\Desktop\\Trabalho Vet\\sistema_Patas&Cuidados\\sistema_Patas&Cuidados.csproj",
         "packagesPath": "C:\\Users\\Aluno_Manha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno_Manha\\Desktop\\PatasECuidados\\sistema_Patas&Cuidados\\obj\\",
+        "outputPath": "C:\\Users\\Aluno_Manha\\Desktop\\Trabalho Vet\\sistema_Patas&Cuidados\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[9.3.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -74,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

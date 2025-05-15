@@ -12,9 +12,9 @@ namespace sistema_Patas_Cuidados
             string usuario = txtUsuario.Text;
             string senha = txtSenha.Text;
 
-            if(usuario == "administrador" && senha == "12345678")
+            if (usuario == "administrador" && senha == "12345678")
             {
-               telaPrinciapal tela2 = new telaPrinciapal();
+                telaConsultas tela2 = new telaConsultas();
                 tela2.Show();
                 this.Hide();
 
@@ -23,6 +23,11 @@ namespace sistema_Patas_Cuidados
             {
                 MessageBox.Show("Usuário ou senha incorretos.");
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

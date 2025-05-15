@@ -43,19 +43,22 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(128, 60);
+            pictureBox2.Location = new Point(188, 27);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(464, 540);
+            pictureBox2.Size = new Size(431, 470);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(556, 86);
+            pictureBox1.Location = new Point(619, 25);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(395, 249);
+            pictureBox1.Size = new Size(416, 268);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -64,44 +67,50 @@
             // 
             lblUsuario.AutoSize = true;
             lblUsuario.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUsuario.Location = new Point(588, 310);
+            lblUsuario.Location = new Point(697, 232);
+            lblUsuario.Margin = new Padding(2, 0, 2, 0);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(80, 22);
+            lblUsuario.Size = new Size(53, 16);
             lblUsuario.TabIndex = 3;
             lblUsuario.Text = "Usuário:";
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(588, 341);
+            txtUsuario.Location = new Point(697, 251);
+            txtUsuario.Margin = new Padding(2);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(363, 31);
+            txtUsuario.Size = new Size(255, 23);
             txtUsuario.TabIndex = 4;
             // 
             // lblSenha
             // 
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSenha.Location = new Point(588, 392);
+            lblSenha.Location = new Point(697, 281);
+            lblSenha.Margin = new Padding(2, 0, 2, 0);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(70, 22);
+            lblSenha.Size = new Size(46, 16);
             lblSenha.TabIndex = 5;
             lblSenha.Text = "Senha:";
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(588, 420);
+            txtSenha.Location = new Point(697, 298);
+            txtSenha.Margin = new Padding(2);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(363, 31);
+            txtSenha.Size = new Size(255, 23);
             txtSenha.TabIndex = 6;
+            txtSenha.UseSystemPasswordChar = true;
             // 
             // btEntrar
             // 
             btEntrar.BackColor = Color.GhostWhite;
             btEntrar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btEntrar.ForeColor = Color.Indigo;
-            btEntrar.Location = new Point(692, 479);
+            btEntrar.Location = new Point(769, 333);
+            btEntrar.Margin = new Padding(2);
             btEntrar.Name = "btEntrar";
-            btEntrar.Size = new Size(107, 36);
+            btEntrar.Size = new Size(75, 22);
             btEntrar.TabIndex = 7;
             btEntrar.Text = "Entrar";
             btEntrar.UseVisualStyleBackColor = false;
@@ -109,10 +118,10 @@
             // 
             // telaInicial
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
-            ClientSize = new Size(1154, 670);
+            ClientSize = new Size(1154, 542);
             Controls.Add(btEntrar);
             Controls.Add(txtSenha);
             Controls.Add(lblSenha);
@@ -121,6 +130,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2);
             Name = "telaInicial";
             Text = "Clínica Patas & Cuidados";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

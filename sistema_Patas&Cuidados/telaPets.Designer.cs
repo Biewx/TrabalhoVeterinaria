@@ -29,226 +29,222 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaPets));
-            dgvPets = new DataGridView();
             pictureBox3 = new PictureBox();
-            btSalvar = new Button();
-            btLimpar = new Button();
+            btnVerDiagnostico = new Button();
             lblTutor = new Label();
             lblEspecie = new Label();
             lblPet = new Label();
             pictureBox2 = new PictureBox();
-            lblSintomas = new Label();
             txtSintomas = new TextBox();
             lblConsultaN = new Label();
             lblDiagnostico = new Label();
-            btTelaConsulta = new Button();
             lblNomePet = new Label();
-            lblTutor2 = new Label();
             lblEspecie2 = new Label();
+            lblTutor2 = new Label();
             lblNumConsulta = new Label();
-            ((System.ComponentModel.ISupportInitialize)dgvPets).BeginInit();
+            btnVoltar = new Button();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // dgvPets
-            // 
-            dgvPets.BackgroundColor = SystemColors.ButtonFace;
-            dgvPets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPets.Location = new Point(283, 14);
-            dgvPets.Name = "dgvPets";
-            dgvPets.RowHeadersWidth = 62;
-            dgvPets.Size = new Size(741, 145);
-            dgvPets.TabIndex = 50;
-            // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(1, 376);
+            pictureBox3.Location = new Point(-5, 250);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(276, 310);
+            pictureBox3.Size = new Size(276, 316);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 49;
             pictureBox3.TabStop = false;
             // 
-            // btSalvar
+            // btnVerDiagnostico
             // 
-            btSalvar.BackColor = Color.Indigo;
-            btSalvar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btSalvar.ForeColor = SystemColors.ButtonHighlight;
-            btSalvar.Location = new Point(507, 548);
-            btSalvar.Name = "btSalvar";
-            btSalvar.Size = new Size(112, 34);
-            btSalvar.TabIndex = 46;
-            btSalvar.Text = "Salvar";
-            btSalvar.UseVisualStyleBackColor = false;
-            // 
-            // btLimpar
-            // 
-            btLimpar.BackColor = Color.Indigo;
-            btLimpar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btLimpar.ForeColor = SystemColors.ButtonHighlight;
-            btLimpar.Location = new Point(743, 548);
-            btLimpar.Name = "btLimpar";
-            btLimpar.Size = new Size(112, 34);
-            btLimpar.TabIndex = 45;
-            btLimpar.Text = "Limpar";
-            btLimpar.UseVisualStyleBackColor = false;
+            btnVerDiagnostico.BackColor = Color.Indigo;
+            btnVerDiagnostico.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVerDiagnostico.ForeColor = SystemColors.ButtonHighlight;
+            btnVerDiagnostico.Location = new Point(609, 353);
+            btnVerDiagnostico.Margin = new Padding(2);
+            btnVerDiagnostico.Name = "btnVerDiagnostico";
+            btnVerDiagnostico.Size = new Size(174, 50);
+            btnVerDiagnostico.TabIndex = 46;
+            btnVerDiagnostico.Text = "Ver Diagnóstico";
+            btnVerDiagnostico.UseVisualStyleBackColor = false;
+            btnVerDiagnostico.Click += btnVerDiagnostico_Click;
             // 
             // lblTutor
             // 
             lblTutor.AutoSize = true;
-            lblTutor.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTutor.Location = new Point(283, 265);
+            lblTutor.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblTutor.Location = new Point(431, 109);
+            lblTutor.Margin = new Padding(2, 0, 2, 0);
             lblTutor.Name = "lblTutor";
-            lblTutor.Size = new Size(57, 22);
+            lblTutor.Size = new Size(49, 19);
             lblTutor.TabIndex = 33;
             lblTutor.Text = "Tutor:";
             // 
             // lblEspecie
             // 
             lblEspecie.AutoSize = true;
-            lblEspecie.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEspecie.Location = new Point(738, 183);
+            lblEspecie.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblEspecie.Location = new Point(681, 60);
+            lblEspecie.Margin = new Padding(2, 0, 2, 0);
             lblEspecie.Name = "lblEspecie";
-            lblEspecie.Size = new Size(84, 22);
+            lblEspecie.Size = new Size(72, 19);
             lblEspecie.TabIndex = 31;
             lblEspecie.Text = "Espécie:";
             // 
             // lblPet
             // 
             lblPet.AutoSize = true;
-            lblPet.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPet.Location = new Point(283, 183);
+            lblPet.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblPet.Location = new Point(431, 61);
+            lblPet.Margin = new Padding(2, 0, 2, 0);
             lblPet.Name = "lblPet";
-            lblPet.Size = new Size(103, 22);
+            lblPet.Size = new Size(90, 19);
             lblPet.TabIndex = 29;
             lblPet.Text = "Nome pet:";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 11);
+            pictureBox2.Location = new Point(-5, -2);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(275, 251);
+            pictureBox2.Size = new Size(292, 211);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 28;
             pictureBox2.TabStop = false;
             // 
-            // lblSintomas
-            // 
-            lblSintomas.AutoSize = true;
-            lblSintomas.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSintomas.Location = new Point(283, 353);
-            lblSintomas.Name = "lblSintomas";
-            lblSintomas.Size = new Size(93, 22);
-            lblSintomas.TabIndex = 59;
-            lblSintomas.Text = "Sintomas:";
-            // 
             // txtSintomas
             // 
-            txtSintomas.Location = new Point(283, 378);
+            txtSintomas.Location = new Point(376, 178);
+            txtSintomas.Margin = new Padding(2);
             txtSintomas.Name = "txtSintomas";
-            txtSintomas.Size = new Size(741, 31);
+            txtSintomas.Size = new Size(1312, 23);
             txtSintomas.TabIndex = 60;
             // 
             // lblConsultaN
             // 
             lblConsultaN.AutoSize = true;
-            lblConsultaN.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblConsultaN.Location = new Point(738, 265);
+            lblConsultaN.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblConsultaN.Location = new Point(681, 109);
+            lblConsultaN.Margin = new Padding(2, 0, 2, 0);
             lblConsultaN.Name = "lblConsultaN";
-            lblConsultaN.Size = new Size(117, 22);
+            lblConsultaN.Size = new Size(102, 19);
             lblConsultaN.TabIndex = 61;
             lblConsultaN.Text = "N° Consulta:";
             // 
             // lblDiagnostico
             // 
             lblDiagnostico.AutoSize = true;
-            lblDiagnostico.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDiagnostico.Location = new Point(283, 435);
+            lblDiagnostico.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblDiagnostico.Location = new Point(290, 228);
+            lblDiagnostico.Margin = new Padding(2, 0, 2, 0);
             lblDiagnostico.Name = "lblDiagnostico";
-            lblDiagnostico.Size = new Size(120, 22);
+            lblDiagnostico.Size = new Size(104, 19);
             lblDiagnostico.TabIndex = 63;
             lblDiagnostico.Text = "Diagnóstico:";
-            // 
-            // btTelaConsulta
-            // 
-            btTelaConsulta.BackColor = Color.Indigo;
-            btTelaConsulta.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btTelaConsulta.ForeColor = SystemColors.ButtonHighlight;
-            btTelaConsulta.Location = new Point(78, 290);
-            btTelaConsulta.Name = "btTelaConsulta";
-            btTelaConsulta.Size = new Size(112, 34);
-            btTelaConsulta.TabIndex = 51;
-            btTelaConsulta.Text = "Consultas";
-            btTelaConsulta.UseVisualStyleBackColor = false;
+            lblDiagnostico.Click += lblDiagnostico_Click;
             // 
             // lblNomePet
             // 
             lblNomePet.AutoSize = true;
-            lblNomePet.Location = new Point(392, 183);
+            lblNomePet.Font = new Font("Segoe UI", 12F);
+            lblNomePet.Location = new Point(525, 61);
+            lblNomePet.Margin = new Padding(2, 0, 2, 0);
             lblNomePet.Name = "lblNomePet";
-            lblNomePet.Size = new Size(59, 25);
+            lblNomePet.Size = new Size(52, 21);
             lblNomePet.TabIndex = 64;
             lblNomePet.Text = "label1";
-            // 
-            // lblTutor2
-            // 
-            lblTutor2.AutoSize = true;
-            lblTutor2.Location = new Point(828, 183);
-            lblTutor2.Name = "lblTutor2";
-            lblTutor2.Size = new Size(59, 25);
-            lblTutor2.TabIndex = 65;
-            lblTutor2.Text = "label2";
+            lblNomePet.Click += lblNomePet_Click;
             // 
             // lblEspecie2
             // 
             lblEspecie2.AutoSize = true;
-            lblEspecie2.Location = new Point(344, 262);
+            lblEspecie2.Font = new Font("Segoe UI", 12F);
+            lblEspecie2.Location = new Point(757, 58);
+            lblEspecie2.Margin = new Padding(2, 0, 2, 0);
             lblEspecie2.Name = "lblEspecie2";
-            lblEspecie2.Size = new Size(59, 25);
-            lblEspecie2.TabIndex = 66;
-            lblEspecie2.Text = "label3";
-            lblEspecie2.Click += label3_Click;
+            lblEspecie2.Size = new Size(52, 21);
+            lblEspecie2.TabIndex = 65;
+            lblEspecie2.Text = "label2";
+            // 
+            // lblTutor2
+            // 
+            lblTutor2.AutoSize = true;
+            lblTutor2.Font = new Font("Segoe UI", 12F);
+            lblTutor2.Location = new Point(484, 107);
+            lblTutor2.Margin = new Padding(2, 0, 2, 0);
+            lblTutor2.Name = "lblTutor2";
+            lblTutor2.Size = new Size(52, 21);
+            lblTutor2.TabIndex = 66;
+            lblTutor2.Text = "label3";
+            lblTutor2.Click += label3_Click;
             // 
             // lblNumConsulta
             // 
             lblNumConsulta.AutoSize = true;
-            lblNumConsulta.Location = new Point(861, 265);
+            lblNumConsulta.Font = new Font("Segoe UI", 12F);
+            lblNumConsulta.Location = new Point(787, 107);
+            lblNumConsulta.Margin = new Padding(2, 0, 2, 0);
             lblNumConsulta.Name = "lblNumConsulta";
-            lblNumConsulta.Size = new Size(59, 25);
+            lblNumConsulta.Size = new Size(52, 21);
             lblNumConsulta.TabIndex = 67;
             lblNumConsulta.Text = "label4";
             // 
+            // btnVoltar
+            // 
+            btnVoltar.BackColor = Color.Indigo;
+            btnVoltar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVoltar.ForeColor = SystemColors.ButtonHighlight;
+            btnVoltar.Location = new Point(969, 481);
+            btnVoltar.Margin = new Padding(2);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(174, 50);
+            btnVoltar.TabIndex = 68;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            label1.Location = new Point(290, 177);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(82, 19);
+            label1.TabIndex = 69;
+            label1.Text = "Sintomas:";
+            // 
             // telaPets
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
-            ClientSize = new Size(1154, 670);
+            ClientSize = new Size(1154, 542);
+            Controls.Add(pictureBox2);
+            Controls.Add(label1);
+            Controls.Add(btnVoltar);
             Controls.Add(lblNumConsulta);
-            Controls.Add(lblEspecie2);
             Controls.Add(lblTutor2);
+            Controls.Add(lblEspecie2);
             Controls.Add(lblNomePet);
             Controls.Add(lblDiagnostico);
             Controls.Add(lblConsultaN);
             Controls.Add(txtSintomas);
-            Controls.Add(lblSintomas);
-            Controls.Add(btTelaConsulta);
-            Controls.Add(dgvPets);
             Controls.Add(pictureBox3);
-            Controls.Add(btSalvar);
-            Controls.Add(btLimpar);
+            Controls.Add(btnVerDiagnostico);
             Controls.Add(lblTutor);
             Controls.Add(lblEspecie);
             Controls.Add(lblPet);
-            Controls.Add(pictureBox2);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2);
             Name = "telaPets";
             Text = "Clínica Patas & Cuidados";
             Load += telaPets_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvPets).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -261,20 +257,19 @@
         private PictureBox pictureBox3;
         private Button btExcluir;
         private Button btEditar;
-        private Button btSalvar;
-        private Button btLimpar;
+        private Button btnVerDiagnostico;
         private Label lblTutor;
         private Label lblEspecie;
         private Label lblPet;
         private PictureBox pictureBox2;
-        private Label lblSintomas;
         private TextBox txtSintomas;
         private Label lblConsultaN;
         private Label lblDiagnostico;
-        private Button btTelaConsulta;
         private Label lblNomePet;
-        private Label lblTutor2;
         private Label lblEspecie2;
+        private Label lblTutor2;
         private Label lblNumConsulta;
+        private Button btnVoltar;
+        private Label label1;
     }
 }

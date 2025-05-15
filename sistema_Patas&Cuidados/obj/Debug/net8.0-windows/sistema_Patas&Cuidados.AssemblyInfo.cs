@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sistema_Patas&Cuidados")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84b4525b8a2a957bed78d0184c2dbadb0afc88f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b25b3401fb9d2714b19ddee5e7d45c422ea42036")]
 [assembly: System.Reflection.AssemblyProductAttribute("sistema_Patas&Cuidados")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sistema_Patas&Cuidados")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

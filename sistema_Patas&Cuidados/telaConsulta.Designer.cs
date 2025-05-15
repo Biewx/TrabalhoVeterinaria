@@ -1,6 +1,6 @@
 ﻿namespace sistema_Patas_Cuidados
 {
-    partial class telaPrinciapal
+    partial class telaConsultas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaPrinciapal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaConsultas));
             pictureBox2 = new PictureBox();
             lblPet = new Label();
             txtPet = new TextBox();
@@ -48,11 +48,9 @@
             txtHorario = new MaskedTextBox();
             btConsultar = new Button();
             btAgendar = new Button();
-            btEditar = new Button();
             btExcluir = new Button();
             pictureBox3 = new PictureBox();
             dgvConsultas = new DataGridView();
-            btlistar = new Button();
             lblID = new Label();
             txtNumeroConsulta = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -63,7 +61,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 8);
+            pictureBox2.Location = new Point(-3, 5);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(292, 211);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -75,7 +73,7 @@
             lblPet.AutoSize = true;
             lblPet.Location = new Point(274, 200);
             lblPet.Name = "lblPet";
-            lblPet.Size = new Size(103, 22);
+            lblPet.Size = new Size(68, 16);
             lblPet.TabIndex = 2;
             lblPet.Text = "Nome pet:";
             // 
@@ -83,7 +81,7 @@
             // 
             txtPet.Location = new Point(274, 225);
             txtPet.Name = "txtPet";
-            txtPet.Size = new Size(420, 30);
+            txtPet.Size = new Size(420, 22);
             txtPet.TabIndex = 3;
             // 
             // lblEspecie
@@ -91,7 +89,7 @@
             lblEspecie.AutoSize = true;
             lblEspecie.Location = new Point(729, 200);
             lblEspecie.Name = "lblEspecie";
-            lblEspecie.Size = new Size(84, 22);
+            lblEspecie.Size = new Size(56, 16);
             lblEspecie.TabIndex = 4;
             lblEspecie.Text = "Espécie:";
             // 
@@ -99,106 +97,106 @@
             // 
             txtEspecie.Location = new Point(729, 225);
             txtEspecie.Name = "txtEspecie";
-            txtEspecie.Size = new Size(286, 30);
+            txtEspecie.Size = new Size(286, 22);
             txtEspecie.TabIndex = 5;
             // 
             // lblTutor
             // 
             lblTutor.AutoSize = true;
-            lblTutor.Location = new Point(274, 274);
+            lblTutor.Location = new Point(274, 257);
             lblTutor.Name = "lblTutor";
-            lblTutor.Size = new Size(57, 22);
+            lblTutor.Size = new Size(38, 16);
             lblTutor.TabIndex = 6;
             lblTutor.Text = "Tutor:";
             // 
             // txtTutor
             // 
-            txtTutor.Location = new Point(274, 299);
+            txtTutor.Location = new Point(274, 282);
             txtTutor.Name = "txtTutor";
-            txtTutor.Size = new Size(420, 30);
+            txtTutor.Size = new Size(420, 22);
             txtTutor.TabIndex = 7;
             // 
             // lblMotivo
             // 
             lblMotivo.AutoSize = true;
-            lblMotivo.Location = new Point(729, 443);
+            lblMotivo.Location = new Point(729, 373);
             lblMotivo.Name = "lblMotivo";
-            lblMotivo.Size = new Size(154, 22);
+            lblMotivo.Size = new Size(102, 16);
             lblMotivo.TabIndex = 8;
             lblMotivo.Text = "Motivo consulta:";
             // 
             // txtMotivo
             // 
-            txtMotivo.Location = new Point(729, 468);
+            txtMotivo.Location = new Point(729, 398);
             txtMotivo.Name = "txtMotivo";
-            txtMotivo.Size = new Size(286, 30);
+            txtMotivo.Size = new Size(286, 22);
             txtMotivo.TabIndex = 9;
             // 
             // lblVeterinario
             // 
             lblVeterinario.AutoSize = true;
-            lblVeterinario.Location = new Point(274, 361);
+            lblVeterinario.Location = new Point(274, 315);
             lblVeterinario.Name = "lblVeterinario";
-            lblVeterinario.Size = new Size(111, 22);
+            lblVeterinario.Size = new Size(74, 16);
             lblVeterinario.TabIndex = 10;
             lblVeterinario.Text = "Veterinário:";
             // 
             // txtVeterinario
             // 
-            txtVeterinario.Location = new Point(274, 386);
+            txtVeterinario.Location = new Point(274, 340);
             txtVeterinario.Name = "txtVeterinario";
-            txtVeterinario.Size = new Size(420, 30);
+            txtVeterinario.Size = new Size(420, 22);
             txtVeterinario.TabIndex = 11;
             // 
             // lblData
             // 
             lblData.AutoSize = true;
-            lblData.Location = new Point(274, 443);
+            lblData.Location = new Point(274, 373);
             lblData.Name = "lblData";
-            lblData.Size = new Size(57, 22);
+            lblData.Size = new Size(37, 16);
             lblData.TabIndex = 12;
             lblData.Text = "Data:";
             // 
             // txtData
             // 
-            txtData.Location = new Point(274, 468);
+            txtData.Location = new Point(274, 398);
             txtData.Mask = "00/00/0000";
             txtData.Name = "txtData";
-            txtData.Size = new Size(111, 30);
+            txtData.Size = new Size(111, 22);
             txtData.TabIndex = 13;
             txtData.ValidatingType = typeof(DateTime);
             // 
             // lblContato
             // 
             lblContato.AutoSize = true;
-            lblContato.Location = new Point(729, 274);
+            lblContato.Location = new Point(729, 257);
             lblContato.Name = "lblContato";
-            lblContato.Size = new Size(86, 22);
+            lblContato.Size = new Size(56, 16);
             lblContato.TabIndex = 14;
             lblContato.Text = "Contato:";
             // 
             // txtContato
             // 
-            txtContato.Location = new Point(729, 299);
+            txtContato.Location = new Point(729, 282);
             txtContato.Name = "txtContato";
-            txtContato.Size = new Size(286, 30);
+            txtContato.Size = new Size(286, 22);
             txtContato.TabIndex = 15;
             // 
             // lblHora
             // 
             lblHora.AutoSize = true;
-            lblHora.Location = new Point(509, 443);
+            lblHora.Location = new Point(509, 373);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(79, 22);
+            lblHora.Size = new Size(53, 16);
             lblHora.TabIndex = 16;
             lblHora.Text = "Horário:";
             // 
             // txtHorario
             // 
-            txtHorario.Location = new Point(509, 468);
+            txtHorario.Location = new Point(509, 398);
             txtHorario.Mask = "00:00";
             txtHorario.Name = "txtHorario";
-            txtHorario.Size = new Size(111, 30);
+            txtHorario.Size = new Size(111, 22);
             txtHorario.TabIndex = 17;
             txtHorario.ValidatingType = typeof(DateTime);
             // 
@@ -206,7 +204,7 @@
             // 
             btConsultar.BackColor = Color.Indigo;
             btConsultar.ForeColor = SystemColors.ButtonHighlight;
-            btConsultar.Location = new Point(476, 558);
+            btConsultar.Location = new Point(582, 457);
             btConsultar.Name = "btConsultar";
             btConsultar.Size = new Size(112, 34);
             btConsultar.TabIndex = 18;
@@ -217,7 +215,7 @@
             // 
             btAgendar.BackColor = Color.Indigo;
             btAgendar.ForeColor = SystemColors.ButtonHighlight;
-            btAgendar.Location = new Point(274, 558);
+            btAgendar.Location = new Point(320, 457);
             btAgendar.Name = "btAgendar";
             btAgendar.Size = new Size(112, 34);
             btAgendar.TabIndex = 19;
@@ -225,22 +223,11 @@
             btAgendar.UseVisualStyleBackColor = false;
             btAgendar.Click += btAgendar_Click;
             // 
-            // btEditar
-            // 
-            btEditar.BackColor = Color.Indigo;
-            btEditar.ForeColor = SystemColors.ButtonHighlight;
-            btEditar.Location = new Point(689, 558);
-            btEditar.Name = "btEditar";
-            btEditar.Size = new Size(112, 34);
-            btEditar.TabIndex = 20;
-            btEditar.Text = "Editar";
-            btEditar.UseVisualStyleBackColor = false;
-            // 
             // btExcluir
             // 
             btExcluir.BackColor = Color.Indigo;
             btExcluir.ForeColor = SystemColors.ButtonHighlight;
-            btExcluir.Location = new Point(903, 558);
+            btExcluir.Location = new Point(852, 457);
             btExcluir.Name = "btExcluir";
             btExcluir.Size = new Size(112, 34);
             btExcluir.TabIndex = 21;
@@ -250,9 +237,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(-8, 386);
+            pictureBox3.Location = new Point(-8, 244);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(276, 310);
+            pictureBox3.Size = new Size(276, 316);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 22;
             pictureBox3.TabStop = false;
@@ -261,30 +248,19 @@
             // 
             dgvConsultas.BackgroundColor = SystemColors.ButtonFace;
             dgvConsultas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvConsultas.Location = new Point(347, 24);
+            dgvConsultas.Location = new Point(320, 24);
             dgvConsultas.Name = "dgvConsultas";
             dgvConsultas.RowHeadersWidth = 62;
-            dgvConsultas.Size = new Size(668, 161);
+            dgvConsultas.Size = new Size(782, 173);
             dgvConsultas.TabIndex = 23;
-            dgvConsultas.CellDoubleClick += dgvConsultas_CellDoubleClick;
-            // 
-            // btlistar
-            // 
-            btlistar.BackColor = Color.Indigo;
-            btlistar.ForeColor = SystemColors.ButtonHighlight;
-            btlistar.Location = new Point(70, 274);
-            btlistar.Name = "btlistar";
-            btlistar.Size = new Size(112, 34);
-            btlistar.TabIndex = 24;
-            btlistar.Text = "Listar";
-            btlistar.UseVisualStyleBackColor = false;
+            dgvConsultas.CellContentDoubleClick += dgvConsultas_CellDoubleClick;
             // 
             // lblID
             // 
             lblID.AutoSize = true;
-            lblID.Location = new Point(729, 361);
+            lblID.Location = new Point(729, 315);
             lblID.Name = "lblID";
-            lblID.Size = new Size(117, 22);
+            lblID.Size = new Size(77, 16);
             lblID.TabIndex = 26;
             lblID.Text = "N° Consulta:";
             lblID.TextAlign = ContentAlignment.TopCenter;
@@ -292,24 +268,22 @@
             // 
             // txtNumeroConsulta
             // 
-            txtNumeroConsulta.Location = new Point(729, 386);
+            txtNumeroConsulta.Location = new Point(729, 340);
             txtNumeroConsulta.Name = "txtNumeroConsulta";
-            txtNumeroConsulta.Size = new Size(286, 30);
+            txtNumeroConsulta.Size = new Size(286, 22);
             txtNumeroConsulta.TabIndex = 27;
             // 
-            // telaPrinciapal
+            // telaConsultas
             // 
-            AutoScaleDimensions = new SizeF(11F, 22F);
+            AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
-            ClientSize = new Size(1154, 670);
+            ClientSize = new Size(1154, 542);
             Controls.Add(txtNumeroConsulta);
             Controls.Add(lblID);
-            Controls.Add(btlistar);
             Controls.Add(dgvConsultas);
             Controls.Add(pictureBox3);
             Controls.Add(btExcluir);
-            Controls.Add(btEditar);
             Controls.Add(btAgendar);
             Controls.Add(btConsultar);
             Controls.Add(txtHorario);
@@ -331,8 +305,9 @@
             Controls.Add(pictureBox2);
             Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "telaPrinciapal";
+            Name = "telaConsultas";
             Text = "Clínica Patas & Cuidados";
+            Load += telaPrinciapal_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvConsultas).EndInit();
@@ -360,11 +335,9 @@
         private MaskedTextBox txtHorario;
         private Button btConsultar;
         private Button btAgendar;
-        private Button btEditar;
         private Button btExcluir;
         private PictureBox pictureBox3;
         private DataGridView dgvConsultas;
-        private Button btlistar;
         private Label lblID;
         private TextBox txtNumeroConsulta;
     }
